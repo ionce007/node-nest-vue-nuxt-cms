@@ -4,10 +4,13 @@ import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
 
 import { Log4jsLogger } from './libs/log4js/';
 
+import { ConfigModule, ConfigService } from '@nestjs/config';
+
 const ENV = process.env.NODE_ENV;
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
+  console.log('app = ', app)
   app.enableCors({
     origin: true,
     credentials: true,
@@ -15,6 +18,7 @@ async function bootstrap() {
   });
 
   app.useLogger(app.get(Log4jsLogger));
+debugger;
 
   if (ENV !== 'prod') {
     const options = new DocumentBuilder()
