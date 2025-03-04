@@ -1,11 +1,11 @@
 // 生产环境配置
 export default () => ({
   mysql: {
-    host: '10.0.224.4',
-    port: 25532 || 3306,
-    username: 'root',
-    password: '',
-    database: 'nest_cms_api',
-    synchronize: false,
+    host: "mysql.sqlpub.com",
+    port: "3306",
+    user: "ioncehuang",
+    password: "N84Z2cVGjXsC9ktZ",
+    database: "chanyuecms",
+    //synchronize: false,
   },
 });

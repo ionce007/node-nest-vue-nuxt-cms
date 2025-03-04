@@ -11,12 +11,12 @@ export default () =>
       port: 3000,
       // 数据库配置
       mysql: {
-        host: 'localhost',
-        port: 3306,
-        username: 'username',
-        password: 'password',
-        database: 'database',
-        synchronize: false,
+        host: "mysql.sqlpub.com",
+        port: "3306",
+        user: "ioncehuang",
+        password: "N84Z2cVGjXsC9ktZ",
+        database: "chanyuecms",
+        //synchronize: false,
       },
     },
     {
