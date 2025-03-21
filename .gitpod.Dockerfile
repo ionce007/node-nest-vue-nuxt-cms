@@ -1,5 +1,5 @@
 # 使用 Gitpod 的基础镜像
-FROM gitpod/workspace-full-vnc
+FROM gitpod/workspace-full
 
 ARG NODE_VERSION=12.14.1
 # 安装指定版本的 Node.js
