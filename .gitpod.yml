@@ -1,4 +1,4 @@
 image:
   file: .gitpod.Dockerfile
 tasks:
-  - init: nvm install 12.4.1 && nvm alias default 12.4.1
+  - init: nvm install 14 && nvm alias default 14
